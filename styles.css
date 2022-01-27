@@ -75,14 +75,13 @@ footer {
 }
 
 #coolclock {
-  background-image: url("space.jpg");
+  background-image: url("abstract.jpg");
   width: 355px;
   height: 100px;
-  margin-left: 10%;
   color: white;
   border-radius: 10px;
-  position: relative;
   text-align: center;
+  margin-left: 15px;
 }
 
 #verse {
@@ -125,11 +124,22 @@ footer {
 }
 
 #nav {
-  padding-top: 1%;
+  display: inline-block;
+  text-align: center;
+  width: 40%;
+}
+
+#clock {
+  background-image: url("dots.jpg");
+  height: 100px;
+  width: 65%;
+  margin: 0 auto;
+  border-radius: 20px;
+  border-color: rgba(0, 0, 0, 0);
+  color: white;
 }
 
 #coollinks {
-  padding-left: 10%;
   font-size: 50px;
 }
 
@@ -137,26 +147,47 @@ footer {
   position: absolute;
   padding-top: 10%;
   text-align: center;
-  font-size: 50px;
+  font-size: 4vw;
   width: 100%;
   font-family: "Courier New", Courier, monospace;
 }
 
 #blurb {
-  padding-top: 5%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 45%;
   font-size: 25px;
   line-height: 25px;
+  display: inline-block;
+  padding-right: 5%;
+  text-align: justify;
+}
+
+#test {
+  display: inline-block;
 }
 
 #wrapper {
   border-radius: 10px;
   margin-top: 30%;
-  display: flex;
   background: linear-gradient(
     180deg,
     rgba(214, 214, 214, 1) 0%,
     rgba(177, 177, 177, 1) 100%
   );
+}
+
+#rcorners1 {
+  border-radius: 20px;
+  border-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  #nav {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #blurb {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: auto;
+  }
 }
