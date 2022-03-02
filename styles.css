@@ -71,11 +71,11 @@ footer {
 
 @font-face {
   font-family: myFirstFont;
-  src: url(BebasNeue-Regular.ttf);
+  src: url(assets/BebasNeue-Regular.ttf);
 }
 
 #coolclock {
-  background-image: url("abstract.jpg");
+  background-image: url("assets/abstract.jpg");
   width: 355px;
   height: 100px;
   color: white;
@@ -85,7 +85,7 @@ footer {
 }
 
 #verse {
-  background-image: url("galaxy.jpg");
+  background-image: url("assets/galaxy.jpg");
   line-height: 15px;
   width: 355px;
   height: 100px;
@@ -130,7 +130,7 @@ footer {
 }
 
 #clock {
-  background-image: url("dots.jpg");
+  background-image: url("assets/dots.jpg");
   height: 100px;
   width: 65%;
   margin: 0 auto;
@@ -173,6 +173,12 @@ footer {
     rgba(214, 214, 214, 1) 0%,
     rgba(177, 177, 177, 1) 100%
   );
+}
+
+#rcorners1:hover {
+  border-radius: 20px;
+  border-color: rgb(255, 255, 255);
+  padding: 5px;
 }
 
 #rcorners1 {
