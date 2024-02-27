@@ -151,7 +151,8 @@ function depthFirst()//traverse distance in maze until it finds end or until ter
 var finish_sound;
 
 function setup() {
-  createCanvas(500,500);
+  let canvas = createCanvas(500,500);
+  canvas.parent('canvasContainer');
   depthFirst();
 }
 
